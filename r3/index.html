@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de la persona Usuaria</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+<div id="caja_principal">
+
+    <h1>Registro de la persona Usuaria</h1>
+
+    <form>
+
+        <div class="caja_seccion">
+            <h2 class="titulo_seccion">Datos personales</h2>
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" required>
+            </div>
+
+            <div class="campo">
+                <label for="correo">Correo electrónico:</label>
+                <input type="email" id="correo" required>
+            </div>
+
+            <div class="campo">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" id="contrasena" required>
+            </div>
+        </div>
+
+        <div class="caja_seccion">
+            <h2 class="titulo_seccion">Intereses</h2>
+
+            <label><input type="checkbox" value="arte"> Arte</label><br>
+            <label><input type="checkbox" value="tecnologia"> Tecnología</label><br>
+            <label><input type="checkbox" value="deporte"> Deporte</label><br>
+            <label><input type="checkbox" value="musica"> Música</label><br>
+        </div>
+
+        <div class="caja_seccion">
+            <button id="boton_registro" type="submit">Registrarse</button>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

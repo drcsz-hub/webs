@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Calculadora básica</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <main id="contenedor-calculadora">
+    <h1 id="titulo">Calculadora básica</h1>
+
+    <!-- pantalla principal y línea de operación -->
+    <div id="area-pantalla">
+      <div id="linea-operacion" aria-live="polite"></div>
+      <div id="pantalla" role="status" aria-live="polite">0</div>
+    </div>
+
+    <!-- botones -->
+    <section id="teclado">
+      <!-- fila 1 -->
+      <button class="boton accion" id="limpiar">C</button>
+      <button class="boton accion" id="cambiar-signo">+/-</button>
+      <button class="boton accion" id="porcentaje">%</button>
+      <button class="boton operacion" data-op="/">÷</button>
+
+      <!-- fila 2 -->
+      <button class="boton numero" data-valor="7">7</button>
+      <button class="boton numero" data-valor="8">8</button>
+      <button class="boton numero" data-valor="9">9</button>
+      <button class="boton operacion" data-op="*">×</button>
+
+      <!-- fila 3 -->
+      <button class="boton numero" data-valor="4">4</button>
+      <button class="boton numero" data-valor="5">5</button>
+      <button class="boton numero" data-valor="6">6</button>
+      <button class="boton operacion" data-op="-">−</button>
+
+      <!-- fila 4 -->
+      <button class="boton numero" data-valor="1">1</button>
+      <button class="boton numero" data-valor="2">2</button>
+      <button class="boton numero" data-valor="3">3</button>
+      <button class="boton operacion" data-op="+">+</button>
+
+      <!-- fila 5 -->
+      <button class="boton numero" data-valor="0" id="cero" style="grid-column: span 2;">0</button>
+      <button class="boton numero" data-valor=".">.</button>
+      <button class="boton igual" id="igual">=</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
