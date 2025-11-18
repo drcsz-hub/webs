@@ -86,7 +86,7 @@ body{
 .boton:active{ transform: translateY(1px); }
 
 .operacion{
-  background:linear-gradient(180deg,#063c3a,#005a57);
+  background:linear-gradient(180deg,#202020,#424242);
   color:var(--texto);
 }
 
